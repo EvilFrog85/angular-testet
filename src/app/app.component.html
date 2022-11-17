@@ -1,0 +1,20 @@
+
+<div id="layout">
+  <header>
+    <p>Logotyp</p>
+    <p>{{ 'app.header' | translate }}</p>
+    <select (change)="changeLang($event)">
+      <option *ngFor="let lang of langArray" [value]="lang" [selected]="lang == translate.currentLang">{{ lang.toUpperCase() }}</option>
+    </select>
+  </header>
+
+  <nav>
+    <a routerLink="/">Hem</a>
+    <a routerLink="/cocktails">Cocktails</a>
+    <a routerLink="/users">Users</a>
+  </nav>
+
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</div>

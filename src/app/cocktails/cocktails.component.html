@@ -1,0 +1,17 @@
+<h1>{{ store.isOk }}</h1>
+<p>cocktails works!</p>
+<p>{{ 'cocktails.header' | translate }}</p>
+
+<app-spinner *ngIf="!isWaiting" [size]="100"></app-spinner>
+
+<div *ngFor="let drink of drinkList">
+    <p>{{ drink.strDrink }}</p>
+</div>
+
+
+<div *ngFor="let date of dates">
+    <p>{{ date | date: 'yyyy-MMM-dd':'CEST' }}</p>
+</div>
+
+<input type="text" [(ngModel)]="minStrang">
+<button (click)="doSomething()">Gör något</button>

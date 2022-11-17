@@ -1,0 +1,30 @@
+#layout {
+    display: grid;
+    max-width: 1920px;
+    min-height: 100vh;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 62px 1fr;
+    grid-template-areas:
+        "header header"
+        "main main";
+
+    @media all and (min-width: 768px) {
+        grid-template-columns: minmax(150px, auto) 1fr;
+        grid-template-areas: 
+            "header header"
+            "nav main";
+    }
+}
+    header {
+        grid-area: header;
+        background: rgb(255, 170, 170);
+    }
+    nav {
+        grid-area: nav;
+        background: rgb(255, 255, 197);
+    }
+    main {
+        grid-area: main;
+        background: rgb(255, 201, 255);
+    }

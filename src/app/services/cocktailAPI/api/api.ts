@@ -1,0 +1,11 @@
+export * from './filter.service';
+import { FilterService } from './filter.service';
+export * from './list.service';
+import { ListService } from './list.service';
+export * from './lookup.service';
+import { LookupService } from './lookup.service';
+export * from './random.service';
+import { RandomService } from './random.service';
+export * from './search.service';
+import { SearchService } from './search.service';
+export const APIS = [FilterService, ListService, LookupService, RandomService, SearchService];

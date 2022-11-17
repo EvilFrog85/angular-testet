@@ -1,0 +1,11 @@
+{
+    "app": {
+        "header": "Header på app.component"
+    },
+    "cocktails": {
+        "header": "Det här är en rubrik"
+    },
+    "users": {
+        "header-text": "En rubrik för users"
+    }
+}
